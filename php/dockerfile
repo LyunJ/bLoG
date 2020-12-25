@@ -1,0 +1,15 @@
+FROM php:8.0-fpm
+WORKDIR /root
+RUN apt-get update
+RUN apt-get install -y curl
+RUN curl -sS https://getcomposer.org/installer | php
+RUN mv composer.phar /usr/bin/composer
+RUN apt-get install -y zlib1g-dev && apt-get install -y libzip-dev && apt-get install unzip
+RUN docker-php-ext-install zip
+RUN composer global require laravel/installer
+RUN ["/bin/bash", "-c", "echo PATH=~/.composer/vendor/bin:$PATH >> ~/.bashrc"]
+RUN ["/bin/bash", "-c", "source ~/.bashrc"]
+RUN docker-php-ext-install pdo_mysql
+RUN docker-php-ext-install bcmath
+RUN docker-php-ext-install mysqli
+EXPOSE 9000

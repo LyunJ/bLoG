@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+}
+div.home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+div.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 400px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+}
+div.logo div {
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+}
+div.B {
+    animation: fadeinandmovedown 3s 0.1s ease;
+    -moz-animation: fadeinandmovedown 3s 0.1s ease; /* Firefox */
+    -webkit-animation: fadeinandmovedown 3s 0.1s ease; /* Safari and Chrome */
+    -o-animation: fadeinandmovedown 3s 0.1s ease; /* Opera */
+}
+div.L {
+    animation: fadeinandmovedown 3s 0.3s ease;
+    -moz-animation: fadeinandmovedown 3s 0.3s ease; /* Firefox */
+    -webkit-animation: fadeinandmovedown 3s 0.3s ease; /* Safari and Chrome */
+    -o-animation: fadeinandmovedown 3s 0.3s ease; /* Opera */
+}
+div.O {
+    animation: fadeinandmovedown 3s 0.5s ease;
+    -moz-animation: fadeinandmovedown 3s 0.5s ease; /* Firefox */
+    -webkit-animation: fadeinandmovedown 3s 0.5s ease; /* Safari and Chrome */
+    -o-animation: fadeinandmovedown 3s 0.5s ease; /* Opera */
+}
+div.G {
+    animation: fadeinandmovedown 3s 0.7s ease;
+    -moz-animation: fadeinandmovedown 3s 0.7s ease; /* Firefox */
+    -webkit-animation: fadeinandmovedown 3s 0.7s ease; /* Safari and Chrome */
+    -o-animation: fadeinandmovedown 3s 0.7s ease; /* Opera */
+}
+@keyframes fadeinandmovedown {
+    from {
+        margin-bottom: 70px;
+        opacity: 0;
+    }
+    to {
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeinandmovedown {
+    /* Safari and Chrome */
+    from {
+        margin-bottom: 70px;
+        opacity: 0;
+    }
+    to {
+        margin-bottom: 0;
+        opacity: 1;
+    }
+}

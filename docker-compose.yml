@@ -1,0 +1,70 @@
+version: "3.8"
+services:
+  database:
+    container_name: database
+    image: mysql:8
+    environment:
+      MYSQL_DATABASE: mysql
+      MYSQL_USER: lyunj
+      MYSQL_PASSWORD: Dldbswo77@
+      MYSQL_ROOT_PASSWORD: Dldbswo77@
+    volumes:
+      - ./mysql/data:/var/lib/mysql:rw
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    ports:
+      - "3306:3306"
+    networks:
+      - database
+  php:
+    container_name: phpfpm
+    build:
+      context: ./php
+      dockerfile: dockerfile
+    depends_on:
+      - database
+    ports:
+      - "9000:9000"
+    volumes:
+     - "./laravel:/var/www/laravel"
+    networks:
+      - backend
+  server:
+    container_name: nginx_server
+    build:
+      context: ./nginx
+      dockerfile: dockerfile
+    depends_on:
+      - php
+    volumes:
+      - "./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf"
+      - "./laravel:/var/www/laravel"
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - backend
+    restart: always
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin:5.0.4
+    environment:
+      PMA_HOST: database
+      PMA_USER: lyunj
+      PMA_PASSWORD: Dldbswo77@
+      PMA_PORT: 3306
+
+    depends_on:
+      - server
+    ports:
+      - "8080:80"
+    networks:
+      - database
+networks:
+  database:
+    name: database
+    driver: bridge
+  backend:
+    name: backend
+    driver: bridge
