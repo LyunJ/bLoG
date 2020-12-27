@@ -1,0 +1,59 @@
+body {
+    position: relative;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+div.signup-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+    height: 40vw;
+    border-radius: 0.5em;
+    border: 1px solid #273746;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name,
+.email,
+.password,
+.login,
+.signup {
+    display: flex;
+    height: 30px;
+    width: 90%;
+    padding: 5px 5px 5px 20px;
+}
+
+.name label,
+.email label,
+.password label {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.name input,
+.email input,
+.password input {
+    flex-grow: 5;
+}
+
+button {
+    color: white;
+    background-color: #1c2833;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}

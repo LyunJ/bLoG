@@ -29,7 +29,7 @@ form {
 .email,
 .password,
 .login,
-.signin {
+.signup {
     display: flex;
     height: 30px;
     width: 90%;

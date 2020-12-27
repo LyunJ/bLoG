@@ -108,6 +108,17 @@
 
 /***/ }),
 
+/***/ "./resources/css/signup.css":
+/*!**********************************!*\
+  !*** ./resources/css/signup.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/js/home.js":
 /*!******************************!*\
   !*** ./resources/js/home.js ***!
@@ -121,28 +132,17 @@ document.getElementById("logo").addEventListener("click", function () {
 
 /***/ }),
 
-/***/ "./resources/js/login.js":
-/*!*******************************!*\
-  !*** ./resources/js/login.js ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ 0:
-/*!***************************************************************************************************************!*\
-  !*** multi ./resources/js/home.js ./resources/js/login.js ./resources/css/home.css ./resources/css/login.css ***!
-  \***************************************************************************************************************/
+/*!******************************************************************************************************************!*\
+  !*** multi ./resources/js/home.js ./resources/css/home.css ./resources/css/login.css ./resources/css/signup.css ***!
+  \******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\tedle\work\laravel\laravel\blog\resources\js\home.js */"./resources/js/home.js");
-__webpack_require__(/*! C:\Users\tedle\work\laravel\laravel\blog\resources\js\login.js */"./resources/js/login.js");
 __webpack_require__(/*! C:\Users\tedle\work\laravel\laravel\blog\resources\css\home.css */"./resources/css/home.css");
-module.exports = __webpack_require__(/*! C:\Users\tedle\work\laravel\laravel\blog\resources\css\login.css */"./resources/css/login.css");
+__webpack_require__(/*! C:\Users\tedle\work\laravel\laravel\blog\resources\css\login.css */"./resources/css/login.css");
+module.exports = __webpack_require__(/*! C:\Users\tedle\work\laravel\laravel\blog\resources\css\signup.css */"./resources/css/signup.css");
 
 
 /***/ })

@@ -29,6 +29,7 @@ services:
     volumes:
      - "./laravel:/var/www/laravel"
     networks:
+      - database
       - backend
   server:
     container_name: nginx_server

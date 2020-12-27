@@ -11,9 +11,8 @@ const mix = require("laravel-mix");
  |
  */
 
-mix.js(["resources/js/home.js", "resources/js/login.js"], "public/js");
+mix.js(["resources/js/home.js"], "public/js");
 
-mix.postCss("resources/css/home.css", "public/css").postCss(
-    "resources/css/login.css",
-    "public/css"
-);
+mix.postCss("resources/css/home.css", "public/css")
+    .postCss("resources/css/login.css", "public/css")
+    .postCss("resources/css/signup.css", "public/css");

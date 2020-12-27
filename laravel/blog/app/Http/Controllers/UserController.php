@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreUser;
 
 class UserController extends Controller
 {
@@ -29,12 +30,17 @@ class UserController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\StoreUser  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreUser $request)
     {
-        //
+        $user = \App\Models\User::create($request->all());
+        if (!$user) {
+            return back()->with('flash_message', '유저가 생성되지 않았습니다')->withInput();
+        }
+
+        return redirect('/login')->with('flash_message', '유저가 생성되었습니다');
     }
 
     /**
