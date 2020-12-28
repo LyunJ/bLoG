@@ -1,5 +1,5 @@
 <div class="login-section">
-    <form method="POST" action="api/login">
+    <form method="GET" action="auth/login">
         @csrf
         <div class="email">
             <label for="email">Email: </label>
@@ -13,7 +13,7 @@
         <div class="login">
             <button type="submit" id="login-button">Login</button>
         </div>
-        <div class="signup">
+        <div class="signup">        
             <button id="signup-button" onclick="location.href='127.0.0.1/signup'">SignUp</button>
         </div>
     </form>

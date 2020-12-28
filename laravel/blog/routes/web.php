@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
@@ -14,16 +15,24 @@ use App\Http\Controllers\UserController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('welcome');
 });
 
 Route::get('/login', function () {
     return view('login');
-});
+})->name('login');
 
 Route::get('/signup', function () {
     return view('signup');
 });
 
-Route::resource('users', UserController::class);
+Route::resource('users', UserController::class)->only([
+    'store'
+]);
+
+Route::get('auth/login', [LoginController::class, 'authenticate']);
+
+Route::get('/mainpage', function () {
+    return view('mainpage');
+})->middleware('auth');

@@ -2,5 +2,6 @@
     "/js/home.js": "/js/home.js",
     "/css/home.css": "/css/home.css",
     "/css/login.css": "/css/login.css",
-    "/css/signup.css": "/css/signup.css"
+    "/css/signup.css": "/css/signup.css",
+    "/css/top_nav.css": "/css/top_nav.css"
 }

@@ -50,7 +50,7 @@ form {
     flex-grow: 5;
 }
 
-button {
+div.signup button {
     color: white;
     background-color: #1c2833;
     width: 100%;

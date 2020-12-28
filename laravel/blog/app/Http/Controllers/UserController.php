@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreUser;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -35,7 +37,12 @@ class UserController extends Controller
      */
     public function store(StoreUser $request)
     {
-        $user = \App\Models\User::create($request->all());
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password)
+        ]);
+
         if (!$user) {
             return back()->with('flash_message', '유저가 생성되지 않았습니다')->withInput();
         }
