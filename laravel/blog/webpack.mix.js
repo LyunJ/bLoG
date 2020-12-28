@@ -16,4 +16,5 @@ mix.js(["resources/js/home.js"], "public/js");
 mix.postCss("resources/css/home.css", "public/css")
     .postCss("resources/css/login.css", "public/css")
     .postCss("resources/css/signup.css", "public/css")
-    .postCss("resources/css/top_nav.css", "public/css");
+    .postCss("resources/css/top_nav.css", "public/css")
+    .postCss("resources/css/mainpage.css", "public/css");

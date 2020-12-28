@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/top_nav.css">
+    <link rel="stylesheet" href="css/mainpage.css">
 </head>
 <body>
     @auth
