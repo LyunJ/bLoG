@@ -1,2 +1,117 @@
 .mainpage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.center-content {
+    width: 80%;
+    display: block;
+    position: relative;
+}
+
+/* profile-block */
+
+.profile-block {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f9f9f9;
+}
+
+.profile-summary {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-summary-inner-box {
+    width: 70%;
+}
+
+.language-image-box {
+    width: 70%;
+}
+
+/* mainpage-portfolio */
+
+.portfolio-block {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f9f9f9;
+}
+
+.title-block {
+    text-align: center;
+    border-color: black;
+}
+
+.portfolio-content-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.portfolio-content-explanation {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-content-images {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-content-explanation-inner-box {
+    width: 70%;
+}
+
+.portfolio-content-images-inner-box {
+    width: 70%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.portfolio-content-block {
+    display: none;
 }

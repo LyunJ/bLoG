@@ -13,6 +13,8 @@ const mix = require("laravel-mix");
 
 mix.js(["resources/js/home.js"], "public/js");
 
+mix.js(["resources/js/mainpage-portfolio-image-slide.js"], "public/js");
+
 mix.postCss("resources/css/home.css", "public/css")
     .postCss("resources/css/login.css", "public/css")
     .postCss("resources/css/signup.css", "public/css")

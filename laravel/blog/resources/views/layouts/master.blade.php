@@ -25,5 +25,6 @@
     </div>
     @endif
     @yield('content')
+    <script type="text/javascript" src="js/mainpage-portfolio-image-slide.js"></script>
 </body>
 </html>

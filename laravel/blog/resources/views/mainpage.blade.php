@@ -2,6 +2,9 @@
 
 @section('content')
     <div class="mainpage">
-        <x-mainpage-profile />
+        <div class="center-content">
+            <x-mainpage-profile />
+            <x-mainpage-portfolio />
+        </div>
     </div>
 @endsection
