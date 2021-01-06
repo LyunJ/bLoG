@@ -3,7 +3,7 @@
         <a href="">logo</a>
     </div>
     <ul class="menu">
-        <li><a href="">Profile</a></li>
+        <li><a href="{{ route('profile_page') }}">Profile</a></li>
         <li><a href="">Posts</a></li>
         <li><a href="">Docs</a></li>
     </ul>

@@ -1,0 +1,30 @@
+body {
+    position: relative;
+    padding-top: 80px;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.mainpage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.center-content {
+    width: 80%;
+    display: block;
+    position: relative;
+}
+
+.profile-form-block {
+    width: 100%;
+}
+
+.introduction-block {
+    width: 100%;
+    display: block;
+}

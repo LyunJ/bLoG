@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class PortfolioImage extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -18,4 +19,9 @@ class PortfolioImage extends Model
         'url',
         'detail'
     ];
+
+    public function portfolio()
+    {
+        return $this->belongsTo('App\Models\Portfolio');
+    }
 }

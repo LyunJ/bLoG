@@ -1,3 +1,12 @@
+body {
+    position: relative;
+    padding-top: 80px;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
 .mainpage {
     width: 100%;
     height: 100%;
@@ -114,4 +123,38 @@
 
 .portfolio-content-block {
     display: none;
+}
+
+/* mainpage-contact */
+.contact-block {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f9f9f9;
+    display: block;
+}
+
+.title-block {
+    text-align: center;
+    border-color: black;
+}
+
+.contact-content-block {
+    width: 100%;
+}
+
+.contact-content-inner-block {
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-name {
+    padding-right: 10px;
+    text-align: center;
+}
+
+.contact-content {
+    text-align: center;
 }
