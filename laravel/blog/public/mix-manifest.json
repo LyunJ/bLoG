@@ -6,5 +6,6 @@
     "/css/top_nav.css": "/css/top_nav.css",
     "/css/mainpage.css": "/css/mainpage.css",
     "/css/profilepage.css": "/css/profilepage.css",
-    "/js/mainpage-portfolio-image-slide.js": "/js/mainpage-portfolio-image-slide.js"
+    "/js/mainpage-portfolio-image-slide.js": "/js/mainpage-portfolio-image-slide.js",
+    "/js/profilepage.js": "/js/profilepage.js"
 }

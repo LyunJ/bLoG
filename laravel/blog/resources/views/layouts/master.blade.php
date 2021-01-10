@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>bLoG</title>
-
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/signup.css">
+    {{-- css --}}
     <link rel="stylesheet" href="css/top_nav.css">
-    <link rel="stylesheet" href="css/mainpage.css">
-    <link rel="stylesheet" href="css/profilepage.css">
+    @stack('styles')
 </head>
 <body>
     @auth
@@ -26,6 +23,8 @@
     </div>
     @endif
     @yield('content')
-    <script type="text/javascript" src="js/mainpage-portfolio-image-slide.js"></script>
+
+   {{-- javascript --}}
+    @stack('scripts')
 </body>
 </html>

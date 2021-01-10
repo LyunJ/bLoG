@@ -1,3 +1,7 @@
+@push('login-css')
+    <link rel="stylesheet" href="css/login.css">
+@endpush
+
 <div class="login-section">
     <form method="GET" action="auth/login">
         @csrf

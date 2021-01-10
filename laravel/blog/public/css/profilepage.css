@@ -3,7 +3,7 @@ body {
     padding-top: 80px;
     margin: 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background-color: whitesmoke;
 }
 
@@ -22,9 +22,41 @@ body {
 
 .profile-form-block {
     width: 100%;
+    padding: 20px 20px 0px 20px;
 }
 
 .introduction-block {
     width: 100%;
-    display: block;
+}
+
+.portfolios-block {
+    width: 100%;
+}
+
+.portfolio-block {
+    margin-bottom: 10px;
+}
+
+.portfolio-image-block {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.portfolio-name {
+    margin-bottom: 25px;
+}
+
+.portfolio-image-num {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.portfolio-image,
+.portfolio-image-detail {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

@@ -12,4 +12,5 @@ RUN ["/bin/bash", "-c", "source ~/.bashrc"]
 RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install bcmath
 RUN docker-php-ext-install mysqli
+RUN docker-php-ext-install opcache
 EXPOSE 9000

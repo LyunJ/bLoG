@@ -1,4 +1,14 @@
-/******/ (function(modules) { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("blogJs", [], factory);
+	else if(typeof exports === 'object')
+		exports["blogJs"] = factory();
+	else
+		root["blogJs"] = factory();
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
 /******/
@@ -173,3 +183,4 @@ module.exports = __webpack_require__(/*! C:\Users\tedle\work\laravel\laravel\blo
 /***/ })
 
 /******/ });
+});
